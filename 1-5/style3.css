@@ -1,0 +1,137 @@
+.clearfix::after {
+    content: “”;
+    display: block;
+    clear: both;
+    }
+
+.wapper {
+    width: 400px;
+}
+
+.header {
+    width: 400px;
+    height: 100px;
+    background-color: #141f40;
+    display: flex;
+    box-sizing: content-box;
+
+}
+
+.box1 {
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    position: relative;
+    
+}
+
+.item1,.item2,.item3 {
+    width: 60px;
+    height: 60px;
+    background-color: #a9004b;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-sizing: border-box;
+    float: right;
+}
+
+.main {
+    width: 400px;
+    height: 250px;
+}
+
+.left {
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: left;
+}
+
+.right {
+    width: 250px;
+    height: 250px;
+    background-color: #8c2727;
+    float: right;
+}
+
+.box2 {
+    width: 150px;
+    height: 180px;
+    margin: 40px 60px 40px 40px;
+    
+
+}
+
+.item4,.item5,.item6 {
+    width: 140px;
+    height: 40px;
+    background-color: #ff863f;
+    margin: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-sizing: content-box;
+}
+
+
+.footer {
+    width: 400px;
+    height: 100px;
+    background-color: #d98d30;
+}
+
+
+/*ウィンドウ幅が最大479pxまでの場合*/
+@media screen and (max-width: 479px) {
+    .wapper {
+        width: 200px;
+    }
+
+    .header {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box1 {
+        width: 200px;
+        height: 200px;
+    }
+    .item1,.item2,.item3 {
+        margin-left: 70px;
+        margin-bottom: -10px;
+        float: none;
+    }
+
+    .main {
+        width: 200px;
+    }
+    
+    .left {
+        width: 200px;
+        height: 100px;
+    }
+
+    .right {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box2 {
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .item4,.item5,.item6 {
+        height: 35px;
+        float: none;
+    }
+
+
+    .footer {
+        width: 200px;
+        float: left;
+    }
+}
